@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px rgb(220, 220, 220) solid;
+    color: rgb(0, 0, 144);
+    font-weight: bold;
+    grid-area: header;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 60px;
+    width: 1px;
+    height: 35px;
+    background-color: rgb(220, 220, 220);
+  }
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.fileType {
+  color: rgb(6, 122, 255);
+  font-weight: bold;
+  border: 2px rgb(220, 220, 220) solid;
+  padding: 5px;
+  border-radius: 9px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profileLetter {
+  background: rgb(14, 79, 172);
+  background: linear-gradient(
+    135deg,
+    rgba(14, 79, 172, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  border-radius: 9px;
+  padding: 5px;
+  font-weight: bold;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowDown {
+  font-weight: bold;
+  color: rgb(98, 98, 180);
+  cursor: pointer;
+  rotate: 90deg;
+}

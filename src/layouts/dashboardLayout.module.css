@@ -1,0 +1,29 @@
+.dashboardLayout {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav content content content";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-areas:
+      "header header header"
+      "nav content content";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas:
+      "header header"
+      "nav content";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-areas:
+      "header"
+      "content";
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,22 @@
+.sideNavBar {
+  background-color: #ededed;
+  padding: 20px;
+  grid-area: nav;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  border-bottom: 1px rgb(220, 220, 220) solid;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+.items {
+  margin-top: 30px;
+}

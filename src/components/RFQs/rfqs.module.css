@@ -1,0 +1,43 @@
+.rfqs {
+  padding: 80px;
+  grid-area: content;
+
+  @media screen and (max-width: 480px) {
+    padding: 20px;
+  }
+}
+
+.title {
+  color: rgb(0, 0, 144);
+  font-weight: bold;
+  margin-bottom: 80px;
+  font-size: 32px;
+}
+
+.content {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contentTitle {
+  color: rgb(0, 0, 144);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contentText {
+  margin-bottom: 20px;
+}
+
+.createBtn {
+  background-color: rgb(6, 122, 255);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

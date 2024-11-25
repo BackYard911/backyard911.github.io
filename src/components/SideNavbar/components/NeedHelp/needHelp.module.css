@@ -1,0 +1,51 @@
+.needHelp {
+  margin: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: calc(50% - 35px);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #ededed;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 25px);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    background: url("../../../../assets/7.svg") center center no-repeat;
+  }
+}
+
+.title {
+  color: rgb(0, 0, 144);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.getHelpBtn {
+  background-color: #fff;
+  border: 1px solid rgb(6, 122, 255);
+  color: rgb(6, 122, 255);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 80%;
+}
